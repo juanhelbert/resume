@@ -1,0 +1,51 @@
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  .me-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 70vw;
+    span {
+      font-size: 2.5em;
+      color: #999;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 3em;
+    }
+    .button {
+      margin-top: 30px;
+    }
+    svg {
+      margin: 5px 0 0 8px;
+      transform: scale(1.1);
+    }
+  }
+  .circle {
+    animation: MoveUpDown 8s infinite alternate;
+    height: 420px;
+    width: 452px;
+    bottom: -60px;
+    right: -440px;
+    &:after {
+      height: 80%;
+      width: 80%;
+    }
+  }
+  .box {
+    animation: Rotate 120s infinite linear;
+    height: 300px;
+    width: 300px;
+    top: -60px;
+    left: -300px;
+    &:after {
+      height: 80%;
+      width: 80%;
+    }
+  }
+}

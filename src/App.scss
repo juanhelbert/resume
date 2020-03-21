@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e8ecf4;
+  color: #4b4b4b;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 4em;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 2.2em;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+button,
+.button {
+  background-color: #e8ecf4;
+  color: #4b4b4b;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 1.8em;
+  display: flex;
+  width: max-content;
+  padding: 14px 28px;
+  transition: 0.1s ease;
+  box-shadow: 8px 8px 15px #d3dbe9, -8px -8px 15px #fff;
+  cursor: pointer;
+  &:hover {
+    box-shadow: inset 8px 8px 15px #d3dbe9, inset -8px -8px 15px #fff;
+  }
+}
+
+.circle,
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e8ecf4;
+  box-shadow: 8px 8px 15px #d3dbe9, -8px -8px 15px #fff;
+  position: absolute;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    box-shadow: inset 8px 8px 15px #d3dbe9, inset -8px -8px 15px #fff;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  &:after {
+    border-radius: 50%;
+  }
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes Rotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-380deg);
+  }
+}

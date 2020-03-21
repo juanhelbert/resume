@@ -1,0 +1,12 @@
+.content {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 0 30vh;
+  }
+  p {
+    margin-bottom: 0.5em;
+  }
+}
