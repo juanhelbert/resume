@@ -7,20 +7,22 @@ const Content = () => {
 
   return (
     <div className='content'>
-      <Fade bottom>
-        <section className='container about-me'>
+      <section className='container about-me'>
+        <Fade bottom>
           <h2>About me</h2>
           <p>I'm a {age} years old Software Engineer, passionate about learning and solving problems, always working as part of a team. </p>
           <p>I love creating clean code, researching new technologies and growing in the process.</p>
           <p>I'm always looking for new challenges.</p>
-        </section>
-        <section className='container about-me'>
+        </Fade>
+      </section>
+      <section className='container about-me'>
+        <Fade bottom>
           <h2>About me</h2>
           <p>I'm a {age} years old Software Engineer, passionate about learning and solving problems, always working as part of a team. </p>
           <p>I love creating clean code, researching new technologies and growing in the process.</p>
           <p>I'm always looking for new challenges.</p>
-        </section>
-      </Fade>
+        </Fade>
+      </section>
     </div >
   )
 }
