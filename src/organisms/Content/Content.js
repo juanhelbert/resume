@@ -40,7 +40,7 @@ const Content = () => {
       <section className='container contact'>
         <Fade>
           <h2>Contact</h2>
-          <p>You can white me at <a href='mailto:helbert.juan@gmail.com'>helbert.juan@gmail.com</a></p>
+          <p>You can write me at <a href='mailto:helbert.juan@gmail.com'>helbert.juan@gmail.com</a></p>
         </Fade>
       </section>
     </div >
