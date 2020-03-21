@@ -1,0 +1,36 @@
+.content .used {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: inherit;
+  margin-top: 20px;
+  &__card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 20px 15px;
+    margin: 0 15px 20px 0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: inset 8px 8px 15px #d3dbe9, inset -8px -8px 15px #ffffff88;
+    p {
+      margin: 0;
+      font-size: 2em;
+    }
+  }
+  svg {
+    width: 105px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content .used {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: auto;
+    &__card {
+      margin: 0 15px 25px 0;
+    }
+  }
+}

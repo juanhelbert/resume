@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  &:last-child {
+    padding-bottom: 40px !important;
+  }
+}

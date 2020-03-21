@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -30,6 +32,13 @@ p {
   font-size: 2.2em;
 }
 
+a {
+  &:active,
+  &:visited {
+    color: #4b4b4b;
+  }
+}
+
 .container {
   max-width: 1000px;
   padding: 0 20px;
@@ -48,11 +57,16 @@ button,
   display: flex;
   width: max-content;
   padding: 14px 28px;
-  transition: 0.1s ease;
-  box-shadow: 8px 8px 15px #d3dbe9, -8px -8px 15px #fff;
+}
+
+a,
+button,
+.button {
+  box-shadow: 8px 8px 15px #d3dbe9, -8px -8px 15px #ffffffcc;
   cursor: pointer;
+  transition: 0.1s ease;
   &:hover {
-    box-shadow: inset 8px 8px 15px #d3dbe9, inset -8px -8px 15px #fff;
+    box-shadow: inset 8px 8px 15px #d3dbe9, inset -8px -8px 15px #ffffff88;
   }
 }
 
@@ -62,7 +76,7 @@ button,
   justify-content: center;
   align-items: center;
   background: #e8ecf4;
-  box-shadow: 8px 8px 15px #d3dbe9, -8px -8px 15px #fff;
+  box-shadow: 8px 8px 15px #d3dbe9, -8px -8px 15px #ffffffcc;
   position: absolute;
   &:after {
     content: "";
@@ -70,7 +84,7 @@ button,
     height: 80%;
     width: 80%;
     background-color: transparent;
-    box-shadow: inset 8px 8px 15px #d3dbe9, inset -8px -8px 15px #fff;
+    box-shadow: inset 8px 8px 15px #d3dbe9, inset -8px -8px 15px #ffffffcc;
   }
 }
 
@@ -86,7 +100,7 @@ button,
     transform: translateY(0);
   }
   100% {
-    transform: translateY(60px);
+    transform: translateY(-60px);
   }
 }
 

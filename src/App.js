@@ -1,6 +1,7 @@
 import React from 'react';
-import { Header } from './organisms/Header'
-import { Content } from './organisms/Content'
+import { Header } from './organisms/Header/Header'
+import { Content } from './organisms/Content/Content'
+import { Footer } from './organisms/Footer/Footer'
 import './App.scss';
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Content />
+      <Footer />
     </div>
   );
 }

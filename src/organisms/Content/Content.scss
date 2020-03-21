@@ -1,0 +1,22 @@
+.content {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+  }
+  p {
+    margin-bottom: 0.5em;
+  }
+  .contact {
+    a {
+      color: #4b4b4b;
+      box-shadow: none;
+      font-weight: bold;
+      margin-left: 3px;
+      letter-spacing: 0.5px;
+    }
+  }
+}

@@ -29,7 +29,7 @@ header {
   .circle {
     animation: MoveUpDown 8s infinite alternate;
     height: 420px;
-    width: 452px;
+    width: 420px;
     bottom: -60px;
     right: -440px;
     &:after {
@@ -46,6 +46,42 @@ header {
     &:after {
       height: 80%;
       width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    .box {
+      left: -200px;
+    }
+    .circle {
+      bottom: 0;
+      right: -200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    overflow: hidden;
+    .circle {
+      height: 320px;
+      width: 320px;
+      bottom: 0;
+      right: -190px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    .circle {
+      right: -220px;
+    }
+    .box {
+      left: -240px;
+      top: -100px;
     }
   }
 }
