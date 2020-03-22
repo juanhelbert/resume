@@ -8,7 +8,7 @@ const Header = () => {
       <div className="box" />
       <div className="circle" />
       <div className='me-wrapper'>
-        <Fade >
+        <Fade duration={1000}>
           <span>
             HELLO
           </span>
@@ -16,8 +16,7 @@ const Header = () => {
             I'm Juan
           </h1>
           <p>
-            A Software Engineer, <br />
-            a frontend developer.
+            A Software Engineer and frontend developer.
           </p>
           <a className='button' href="pdf/CV JUAN HELBERT.pdf" target="_blank">
             RESUME

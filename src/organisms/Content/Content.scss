@@ -11,12 +11,29 @@
     margin-bottom: 0.5em;
   }
   .contact {
-    a {
-      color: #4b4b4b;
-      box-shadow: none;
-      font-weight: bold;
-      margin-left: 3px;
-      letter-spacing: 0.5px;
+    .social {
+      display: flex;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 10px 20px 20px 0;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    p {
+      a {
+        color: #4b4b4b;
+        box-shadow: none;
+        font-weight: bold;
+        margin-left: 3px;
+        letter-spacing: 0.5px;
+      }
     }
   }
 }

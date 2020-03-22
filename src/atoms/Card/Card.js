@@ -7,7 +7,7 @@ const Card = (props) => {
   const tagsList = tags.map(item => <li key={item}>{item}</li>)
 
   return (
-    <Fade bottom delay={100} >
+    <Fade duration={500} >
       <a target='_blank' href={link} rel="noopener noreferrer" className={`card ${className}`}>
         <h3>{title}</h3>
         <p>{description}</p>

@@ -49,7 +49,7 @@ const Used = () => {
   return (
     <div className='used'>
       {techUsed.map((item, idx) =>
-        <Fade bottom key={item.name}>
+        <Fade duration={500} key={item.name}>
           <div className='used__card'>
             <span>{item.path}</span>
             <p>{item.name}</p>
