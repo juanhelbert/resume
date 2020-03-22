@@ -20,8 +20,6 @@ const Cards = () => {
           link='https://tumenuonline.com/'
           className='tmo'
         />
-      </div>
-      <div className='cards'>
         <Card
           title='Mountains'
           description='A minimalist app that lists mountains images. I made it to learn about Gatsby and PWA'
@@ -36,8 +34,6 @@ const Cards = () => {
           link='https://congressmembers.netlify.com/'
           className='con'
         />
-      </div>
-      <div className='cards'>
         <Card
           title='Totallia'
           description="Totallia was my first site as a freelance developer. I knew very little about Wordpress, but that wasn't a barrier"

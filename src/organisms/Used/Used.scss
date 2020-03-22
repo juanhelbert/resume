@@ -17,10 +17,10 @@
       margin: 0;
       font-size: 2em;
     }
-  }
-  svg {
-    width: 105px;
-    height: 60px;
+    svg {
+      width: 105px;
+      height: 60px;
+    }
   }
 }
 
@@ -29,8 +29,12 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow: auto;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     &__card {
-      margin: 0 15px 25px 0;
+      margin: 0 15px 15px 0;
     }
   }
 }

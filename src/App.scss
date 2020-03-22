@@ -95,6 +95,23 @@ button,
   }
 }
 
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation: MoveRightLeft 2s infinite cubic-bezier(0.65, 0.05, 0.36, 1) alternate;
+  padding-right: 30px;
+  p {
+    font-size: 1.6em;
+    margin: 0 10px 0;
+    color: #4c4c4caa;
+  }
+  svg {
+    width: 20px;
+    fill: #4c4c4caa;
+  }
+}
+
 @keyframes MoveUpDown {
   0% {
     transform: translateY(0);
@@ -110,5 +127,20 @@ button,
   }
   100% {
     transform: rotate(-380deg);
+  }
+}
+
+@keyframes MoveRightLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .arrow {
+    display: none;
   }
 }
