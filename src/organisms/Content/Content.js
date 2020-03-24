@@ -23,7 +23,7 @@ const Content = () => {
           <h2>A web enthusiast</h2>
           <p>As a Frontend developer I have developed a lot of sites, always keeping the focus on <b>UI/UX</b>, the <b>accessibility</b> and never leaving aside the <b>performance</b>.</p>
           <br /><br />
-          <p>Some great projects I've been envolved in, you can check more in my resume</p>
+          <p>Some great projects I've been envolved in</p>
         </Fade>
         <Cards />
         <span className='arrow'>

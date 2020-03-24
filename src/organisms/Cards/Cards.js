@@ -24,7 +24,7 @@ const Cards = () => {
           title='Mountains'
           description='A minimalist app that lists mountains images. I made it to learn about Gatsby and PWA'
           tags={['React', 'PWA', 'Gatsby']}
-          link='https://tumenuonline.com/'
+          link='https://mountains-hj.netlify.com/'
           className='mou'
         />
         <Card
