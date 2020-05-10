@@ -1,27 +1,29 @@
 a.card {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  width: 48%;
-  margin: 15px 0;
-  padding: 30px 40px 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 25px 25px 15px;
   border-radius: 8px;
   color: #4b4b4b;
   position: relative;
-  .link-icon {
-    width: 18px;
-    margin: 0 0 2px 0px;
-  }
   h3 {
-    font-size: 3em;
+    font-size: 2.2em;
     width: 100%;
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
     line-height: 1.2em;
+    position: relative;
+    svg {
+      position: absolute;
+      width: 16px;
+      margin-left: 4px;
+    }
   }
   p {
-    font-size: 1.7em;
-    margin-bottom: 1.5em;
-    min-height: 75px;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    min-height: 100px;
     color: #4b4b4bcc;
   }
   ul {
@@ -29,47 +31,39 @@ a.card {
     flex-wrap: wrap;
     align-items: flex-end;
     width: 100%;
-    border-top: 1px solid #4c4c4c11;
-    padding-top: 25px;
     li {
       font-size: 1.3em;
-      letter-spacing: 0.5px;
-      padding: 6px 12px;
-      margin-right: 12px;
-      margin-bottom: 15px;
+      letter-spacing: 0.1px;
+      padding: 4px 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
       border-radius: 50px;
       border: 1px solid #e8ecf4;
       box-shadow: 8px 8px 15px #d3dbe9, -8px -8px 15px #ffffffcc;
     }
   }
-  &.ram {
-    background-image: linear-gradient(150deg, rgba(150, 215, 215, 0.2) 20%, rgba(90, 130, 21, 0.02) 100%);
-  }
-  &.exp {
-    background-image: linear-gradient(150deg, rgba(242, 243, 247, 0.4) 20%, rgba(90, 130, 21, 0.02) 100%);
-  }
-  &.agr {
-    background-image: linear-gradient(150deg, rgba(126, 198, 10, 0.08) 20%, rgba(90, 130, 21, 0.02) 100%);
-  }
-  &.tmo {
-    background-image: linear-gradient(150deg, rgba(103, 84, 226, 0.08) 20%, rgba(90, 130, 21, 0.02) 101%);
-  }
-  &.mou {
-    background-image: linear-gradient(150deg, rgba(19, 17, 23, 0.09) 20%, rgba(90, 130, 21, 0.02) 101%);
-  }
-  &.con {
-    background-image: linear-gradient(150deg, rgba(223, 166, 18, 0.1) 20%, rgba(90, 130, 21, 0.02) 101%);
-  }
-  &.tot {
-    background-image: linear-gradient(150deg, rgba(251, 80, 94, 0.06) 20%, rgba(90, 130, 21, 0.02) 101%);
-  }
-  &.aib {
-    background-image: linear-gradient(150deg, rgba(111, 189, 171, 0.1) 20%, rgba(90, 130, 21, 0.02) 101%);
+}
+
+@media only screen and (max-width: 991px) {
+  a.card {
+    min-width: 42%;
+    p {
+      min-height: 75px;
+    }
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   a.card {
-    width: 100%;
+    min-width: 65%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  a.card {
+    min-width: 100%;
+    p {
+      min-height: 100px;
+    }
   }
 }

@@ -24,7 +24,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .content .used {
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -32,18 +32,6 @@
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
       display: none;
-    }
-    &__card {
-      margin: 0 15px 15px 0;
-      min-width: calc(35vw - 33px);
-    }
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .content .used {
-    &__card {
-      min-width: calc(50vw - 28px);
     }
   }
 }
